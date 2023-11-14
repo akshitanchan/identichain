@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>IdentiChain: Decentralized Identity Management</title>
+    </head>
+    <body>
+    <div class="container">
+        <h1>IdentiChain: Decentralized Identity Management</h1>
+
+        <div id="registration-form">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="button" onclick="registerUser()">Register</button>
+            </form>
+        </div>
+
+        <div id="user-info">
+            <h2>User Information</h2>
+            <p id="userInfo"></p>
+        </div>
+
+        <div id="credential-form">
+            <h2>Issue Credential</h2>
+            <form id="issueCredentialForm">
+                <label for="credentialType">Credential Type:</label>
+                <input type="text" id="credentialType" name="credentialType" required>
+
+                <button type="button" onclick="issueCredential()">Issue Credential</button>
+            </form>
+        </div>
+
+        <div id="verifiable-credential">
+            <h2>Verifiable Credential</h2>
+            <p id="credentialInfo"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    </body>
+</html>
